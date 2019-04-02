@@ -29,6 +29,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Dosis:500" rel="stylesheet">
+
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -39,15 +41,23 @@
 	<div class="page">
 	<header class="header">
 		<div class="header__inner">
-			<div class="header__top" data-aos="fade-down">
+			<div class="header__burger">
+				<a href="#my-menu" class="hamburger hamburger--collapse">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</a>
+				<a class="header__top_logo" href="#"><img src="img/logo-header.png" alt=""></a>
+			</div>
+			<div class="header__top">
 				<div class="container">
 					<div class="row">
 						<div class="col d-flex align-items-center">
-							<a href="#my-menu" class="hamburger hamburger--collapse">
+							<!-- <a href="#my-menu" class="hamburger hamburger--collapse">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>
-							</a>
+							</a> -->
 							<a class="header__top_logo" href="#"><img src="img/logo-header.png" alt=""></a>
 							<nav class="header__top-nav">
 								<ul class="header__top-ul d-flex">
@@ -62,16 +72,33 @@
 											</ul>
 										</nav>
 									</li>
-									<li class="active header__top-item"><a class="active header__top-link" href="#">Main</a></li>
-									<li class="header__top-item"><a class="active header__top-link" href="#">Bio</a></li>
-									<li class="header__top-item"><a class="active header__top-link" href="#">Broadcasting</a></li>
-									<li class="header__top-item"><a class="active header__top-link" href="#">Translations</a></li>
-									<li class="header__top-item"><a class="active header__top-link" href="#">Contacts</a></li>
+									<li class="active header__top-item"><a class=" header__top-link" href="#">Main</a></li>
+									<li class="header__top-item"><a class=" header__top-link" href="#">Bio</a></li>
+									<li class="header__top-item"><a class=" header__top-link" href="#">Broadcasting</a></li>
+									<li class="header__top-item"><a class=" header__top-link" href="#">Translations</a></li>
+									<li class="header__top-item"><a class=" header__top-link" href="#">Contacts</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 				</div>
+				<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav id="navbar">
+							<ul class="menu d-flex justify-content-center">
+								<li><a class="header__top_logo" href="#"><img src="img/logo-header.png" alt=""></a></li>
+								<li class="active header__top-item"><a class=" header__top-link" href="#">Main</a></li>
+								<li class="header__top-item"><a class=" header__top-link" href="#">Bio</a></li>
+								<li class="header__top-item"><a class=" header__top-link" href="#">Broadcasting</a></li>
+								<li class="header__top-item"><a class=" header__top-link" href="#">Translations</a></li>
+								<li class="header__top-item"><a class=" header__top-link" href="#">Contacts</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
 			</div>
 			<div class="header__main">
 				<div class="container">
@@ -98,7 +125,6 @@
 				</div>
 			</div>
 		</div>
-		
 	</header>
 
 	<section class="few">

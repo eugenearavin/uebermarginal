@@ -1,21 +1,8 @@
 $(function() {
-	$('.custumers__slider').slick({ 
-		fade: true
-	});
-
-	$('.switch label').on('click', function(){
-  		var indicator = $(this).parent('.switch').find('span');
-  		if ( $(this).hasClass('right') ){
-			$(indicator).addClass('right');
-  		} else {
-    		$(indicator).removeClass('right');
- 	 	}
-	});
-
 	$("#my-menu").mmenu({
         extensions: ['effect-menu-slide', 'pagedim-black'],
         navbar: {
-        	title: '<img src="img/logo.png" alt="logo">'
+        	title: '<img src="img/logo-header.png" alt="logo">'
         }
       });
 
@@ -28,5 +15,15 @@ $(function() {
 	});
 
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+}
 
 
